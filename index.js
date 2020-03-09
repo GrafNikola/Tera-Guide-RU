@@ -161,7 +161,6 @@ module.exports = function Tera_Guide(mod) {
 	function load() {
 		if (!hooks.length) {
 			hook('S_BOSS_GAGE_INFO',        3, sBossGageInfo);
-			hook('S_NPC_STATUS',            2, sNpcStatus);
 			hook('S_SPAWN_NPC',            11, sSpawnNpc);
 			hook('S_SPAWN_PROJECTILE',      5, sSpawnProjectile);
 			hook('S_CREATURE_ROTATE',       2, sCreatureRotate);
@@ -235,11 +234,6 @@ module.exports = function Tera_Guide(mod) {
 		
 		boss_HP = (Number(event.curHp) / Number(event.maxHp));
 		if (boss_HP <= 0 || boss_HP == 1) reset();
-	}
-	
-	function sNpcStatus(event) {
-		if (boss_GameID != event.gameId) return;
-		boss_Enraged = event.enraged;
 	}
 	
 	function sSpawnNpc(event) {
