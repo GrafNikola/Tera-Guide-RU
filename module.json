@@ -1,0 +1,13 @@
+{
+    "name": "Tera-Guide-RU",
+    "options": {
+        "niceName": "Tera-Guide",
+        "guiName": "Tera-Guide"
+    },
+    "author": "ZC",
+	"translation":"ITunk",
+    "description": "Вспомогательные советы по данжам",
+    "servers": ["https://raw.githubusercontent.com/GrafNikola/Tera-Guide-RU/master/"],
+    "supportUrl": "https://github.com/tera-mod/GrafNikola/issues",
+    "version": "90.02"
+}
